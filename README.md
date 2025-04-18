@@ -1,52 +1,30 @@
-Worker Income Calculator
-Descrição
-Este projeto é uma aplicação simples que permite cadastrar um trabalhador, seus contratos de trabalho por hora e calcular a sua renda total em um determinado mês. A aplicação utiliza a classe Scanner para ler dados do usuário e as classes Worker, Department, HourContract e WorkerLevel para estruturar as informações do trabalhador e seus contratos.
+# Worker Income Calculator
 
-Funcionalidades
-Cadastro de trabalhador com nome, nível de trabalho e salário base.
+## Descrição
 
-Adição de contratos de trabalho com data, valor por hora e duração.
+Este é um sistema simples para cadastrar trabalhadores, seus contratos de trabalho e calcular a renda total do trabalhador em um mês específico.
 
-Cálculo de renda total do trabalhador para um mês específico.
+## Funcionalidades
 
-Como usar
-Pré-requisitos
-Java 8 ou superior.
+- Cadastro de trabalhador com nome, nível e salário base.
+- Adição de contratos de trabalho (data, valor por hora e duração).
+- Cálculo de renda do trabalhador para um mês específico.
 
-IDE ou terminal para rodar o código Java.
+## Como Usar
 
-Passos para execução
-Clone ou baixe o código para sua máquina.
+### Pré-requisitos
 
-Compile e execute o arquivo Main.java.
+- Java 8 ou superior.
 
-Exemplo de execução
-Ao rodar o programa, o usuário será solicitado a fornecer as seguintes informações:
+### Passos para Execução
 
-Nome do departamento: O nome do departamento ao qual o trabalhador pertence.
+1. Clone o repositório ou baixe o código.
+2. Compile o código com `javac Main.java`.
+3. Execute o programa com `java Main`.
 
-Dados do trabalhador:
+### Exemplo de Execução
 
-Nome do trabalhador.
-
-Nível de trabalho (Escolha entre os valores disponíveis em WorkerLevel).
-
-Salário base.
-
-Contratos de trabalho: O número de contratos que o trabalhador possui. Para cada contrato, será necessário informar:
-
-Data do contrato (formato DD/MM/YYYY).
-
-Valor por hora.
-
-Duração em horas do contrato.
-
-Cálculo de renda: O mês e ano para o qual o cálculo da renda deve ser feito (formato MM/YYYY).
-
-Exemplo de saída
-plaintext
-Copiar
-Editar
+```plaintext
 Enter the department's name:
 HR
 Enter worker data:
@@ -77,16 +55,4 @@ Enter month and year to calculate income (MM/YYYY)
 Name: John Doe
 Department: HR
 Income for: 03/2025 3400.0
-Estrutura do Projeto
-Main.java: Contém a lógica principal do programa, onde o trabalhador e seus contratos são cadastrados e a renda é calculada.
 
-entities/Worker.java: Define a classe Worker que contém os dados do trabalhador.
-
-entities/Department.java: Define a classe Department que contém o nome do departamento do trabalhador.
-
-entities/HourContract.java: Define a classe HourContract que contém as informações de cada contrato de trabalho.
-
-entities/enums/WorkerLevel.java: Define o enum WorkerLevel que especifica o nível de trabalho do trabalhador (EXPERIENCED, MID_LEVEL, JUNIOR).
-
-Contribuindo
-Sinta-se à vontade para abrir problemas ou enviar pull requests para melhorar este projeto.
